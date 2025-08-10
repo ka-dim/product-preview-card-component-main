@@ -137,7 +137,6 @@ body {
   display: block;
 }
 
-
 @media (min-width: 768px) {
   .card {
     display: flex;
