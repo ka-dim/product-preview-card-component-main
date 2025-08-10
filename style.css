@@ -1,0 +1,163 @@
+:root {
+  --color-primary-green-500: hsl(158, 36%, 37%);
+  --color-primary-green-700: hsl(158, 42%, 18%);
+  --color-neutral-black: hsl(212, 21%, 14%);
+  --color-neutral-grey: hsl(228, 12%, 48%);
+  --color-neutral-cream: hsl(30, 38%, 92%);
+  --color-neutral-white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--color-neutral-cream);
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--color-neutral-white);
+  width: 21.875rem;
+  border-radius: 8px;
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+}
+
+.box-img {
+  display: flex;
+  width: 100%;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0 ;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.card-content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.text-header {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  color: var(--color-neutral-grey);
+}
+
+.title {
+  line-height: 1;
+}
+
+.text-content {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: medium;
+  line-height: 1.6;
+  color: var(--color-neutral-grey);
+}
+
+.price {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.current-price {
+  display: inline-block;
+  font-family: 'Fraunces';
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1;
+  color: var(--color-primary-green-500);
+}
+
+.old-price {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: line-through;
+  font-size: 0.8125rem;
+  font-weight: medium;
+  line-height: 1.2;
+  color: var(--color-neutral-grey);
+}
+
+.card-content-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-primary-green-500);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-size: 0.875rem;
+  color: var(--color-neutral-white);
+}
+
+.icon-cart {
+  display: block;
+}
+
+.btn-text {
+  display: block;
+}
+
+
+@media (min-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    height: 28.5rem;
+    width: 37.5rem;
+  }
+
+  .card-img {
+    display: flex;
+    height: 100%;
+    width: 50%;
+  }
+
+  .img {
+    border-radius: 0.5rem 0 0 0.5rem;
+    height: 100%;
+  }
+  .card-content {
+    width: 50%;
+    gap: 2rem;
+  }
+}
